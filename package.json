@@ -1,0 +1,16 @@
+{
+  "name": "refresh-bot",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "^4.x.x",
+    "body-parser": "^1.x.x",
+    "request": "*"
+  },
+  "description": "Slackbot for Refresh Hilo",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mike Purvis",
+  "license": "ISC"
+}
