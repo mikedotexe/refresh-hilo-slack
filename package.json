@@ -4,12 +4,17 @@
   "dependencies": {
     "express": "^4.x.x",
     "body-parser": "^1.x.x",
-    "request": "*"
+    "request": "*",
+    "mongodb": "*"
   },
   "description": "Slackbot for Refresh Hilo",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mikedotexe/refresh-hilo-slack.git"
   },
   "author": "Mike Purvis",
   "license": "ISC"
