@@ -8,7 +8,7 @@ module.exports = function (req, res, next) {
   console.log(req.body);
   var channel = req.body.channel_id;
   console.log(channel);
-  // var bodyText = req.body.text;
+  var bodyText = req.body.text;
   // console.log(bodyText);
 
   var postM = {
