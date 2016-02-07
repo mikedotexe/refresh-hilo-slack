@@ -1,7 +1,7 @@
 var express = require('express'),
     bodyParser = require('body-parser'),
     mongo = require('mongodb'),
-    // refresh = require('./refresh'),
+    refresh = require('./refresh'),
     app = express(),
     port = process.env.PORT || 3000;
 
@@ -18,12 +18,7 @@ app.post('/', function (req, res) {
 
 
 // post route for train
-app.post('/train', function (req, res) {
-  console.log('body');
-  console.log(req.body);
-  console.log('channel');
-  console.log(req.body.channel_id);
-});
+app.post('/train', refresh);
 
 // error handler
 app.use(function (err, req, res, next) {

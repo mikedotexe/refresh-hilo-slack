@@ -4,17 +4,17 @@ module.exports = function (req, res, next) {
     text : 'Hello, ' + userName + '!',
   };
 
-  console.log('req');
+  console.log('body');
   console.log(req.body);
   var channel = req.body.channel_id;
   console.log(channel);
-  var bodyText = req.body.text;
-  console.log(bodyText);
+  // var bodyText = req.body.text;
+  // console.log(bodyText);
 
   var postM = {
     token : process.env.BOT1,
     channel : channel,
-    text : ':front-train:' + bodyText,
+    text : ':front-train:' + bodyText.replace('train', '').trim(),
     as_user : true,
   }
 
