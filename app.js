@@ -10,7 +10,7 @@ var express = require('express'),
 app.use(bodyParser.json());
 
 // classic Hello World
-app.get('/', function (req, res) {
+app.post('/', function (req, res) {
   res.status(200).send('Aloha Honua')
 });
 
