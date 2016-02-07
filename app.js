@@ -8,6 +8,7 @@ var express = require('express'),
 // example curl command:
 // curl -H "Content-Type: application/json" -X POST -d @manual-test.json http://refresh-slack.dev:3000/train
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // classic Hello World
 app.post('/', function (req, res) {
