@@ -16,7 +16,6 @@ module.exports = function (req, res, next) {
     channel : channel,
     text : ':front-train:' + bodyText,
     as_user : true,
-    username : 'refresh-bot-1',
   }
 
   var request = require('request');
@@ -37,11 +36,11 @@ module.exports = function (req, res, next) {
       url: 'https://slack.com/api/chat.postMessage', //URL to hit
       // qs: {from: 'blog example', time: +new Date()}, //Query string data
       qs: postM,
-      method: 'GET',
+      method: 'POST',
       //Lets post the following key/values as form
       // json: postM,
   }, function(error, response, body){
-      if(error) {
+      if (error) {
           console.log("error:");
           console.log(error);
       } else {
